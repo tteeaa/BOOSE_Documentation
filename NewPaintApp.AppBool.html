@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AppCircle | mysite </title>
+      <title>Class AppBool | mysite </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AppCircle | mysite ">
+      <meta name="title" content="Class AppBool | mysite ">
       
-      <meta name="description" content="Creates a circle on the canvas with specified radius.">
+      <meta name="description" content="Represents a boolean evaluation in the application.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/new/main/apiSpec/new?filename=NewPaintApp_AppCircle.md&amp;value=---%0Auid%3A%20NewPaintApp.AppCircle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/new/main/apiSpec/new?filename=NewPaintApp_AppBool.md&amp;value=---%0Auid%3A%20NewPaintApp.AppBool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="NewPaintApp.AppCircle">
+        <article data-uid="NewPaintApp.AppBool">
 
 
 
-  <h1 id="NewPaintApp_AppCircle" data-uid="NewPaintApp.AppCircle" class="text-break">
-Class AppCircle  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h1 id="NewPaintApp_AppBool" data-uid="NewPaintApp.AppBool" class="text-break">
+Class AppBool  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>NewPaintApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Creates a circle on the canvas with specified radius.</p>
+  <div class="markdown summary"><p>Represents a boolean evaluation in the application.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCircle : CommandOneParameter, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppBool : Evaluation, ICommand</code></pre>
   </div>
 
 
@@ -113,9 +113,8 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">AppCircle</span></div>
+      <div><span class="xref">Evaluation</span></div>
+      <div><span class="xref">AppBool</span></div>
     </dd>
   </dl>
 
@@ -131,22 +130,34 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <span class="xref">CommandOneParameter.param1</span>
+      <span class="xref">Evaluation.expression</span>
     </div>
     <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
+      <span class="xref">Evaluation.evaluatedExpression</span>
     </div>
     <div>
-      <span class="xref">CanvasCommand.yPos</span>
+      <span class="xref">Evaluation.varName</span>
     </div>
     <div>
-      <span class="xref">CanvasCommand.xPos</span>
+      <span class="xref">Evaluation.value</span>
     </div>
     <div>
-      <span class="xref">CanvasCommand.canvas</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Evaluation.CheckParameters(string[])</a>
     </div>
     <div>
-      <span class="xref">CanvasCommand.Canvas</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Evaluation.ProcessExpression(string)</a>
+    </div>
+    <div>
+      <span class="xref">Evaluation.Expression</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.VarName</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.Value</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.Local</span>
     </div>
     <div>
       <span class="xref">Command.IsDouble</span>
@@ -165,9 +176,6 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a>
-    </div>
-    <div>
-      <span class="xref">Command.Compile()</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.ProcessParameters(string)</a>
@@ -219,93 +227,59 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
 </h2>
 
 
-  <a id="NewPaintApp_AppCircle__ctor_" data-uid="NewPaintApp.AppCircle.#ctor*"></a>
+  <a id="NewPaintApp_AppBool__ctor_" data-uid="NewPaintApp.AppBool.#ctor*"></a>
 
-  <h3 id="NewPaintApp_AppCircle__ctor" data-uid="NewPaintApp.AppCircle.#ctor">
-  AppCircle()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L21"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Left empty for inheritance purposes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppCircle()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="NewPaintApp_AppCircle__ctor_" data-uid="NewPaintApp.AppCircle.#ctor*"></a>
-
-  <h3 id="NewPaintApp_AppCircle__ctor_BOOSE_Canvas_System_Int32_" data-uid="NewPaintApp.AppCircle.#ctor(BOOSE.Canvas,System.Int32)">
-  AppCircle(Canvas, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L30"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Initialises a new instance of the AppCircle class with the specified canvas and radius.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppCircle(Canvas c, int radius)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>c</code> <span class="xref">Canvas</span></dt>
-    <dd></dd>
-    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="NewPaintApp_AppCircle_radius" data-uid="NewPaintApp.AppCircle.radius">
-  radius
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="NewPaintApp_AppBool__ctor" data-uid="NewPaintApp.AppBool.#ctor">
+  AppBool()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int radius</code></pre>
+    <pre><code class="lang-csharp hljs">public AppBool()</code></pre>
   </div>
 
 
 
 
-  <h4 class="section">Field Value</h4>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NewPaintApp_AppBool_BoolValue_" data-uid="NewPaintApp.AppBool.BoolValue*"></a>
+
+  <h3 id="NewPaintApp_AppBool_BoolValue" data-uid="NewPaintApp.AppBool.BoolValue">
+  BoolValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BoolValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
-
 
 
 
@@ -318,52 +292,77 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
 </h2>
 
 
-  <a id="NewPaintApp_AppCircle_CheckParameters_" data-uid="NewPaintApp.AppCircle.CheckParameters*"></a>
+  <a id="NewPaintApp_AppBool_Compile_" data-uid="NewPaintApp.AppBool.Compile*"></a>
 
-  <h3 id="NewPaintApp_AppCircle_CheckParameters_System_String___" data-uid="NewPaintApp.AppCircle.CheckParameters(System.String[])">
-  CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <h3 id="NewPaintApp_AppBool_Compile" data-uid="NewPaintApp.AppBool.Compile">
+  Compile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks the parameters for the circle command to ensure they are valid. Custom error messages.</p>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Compile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NewPaintApp_AppBool_EvaluateBooleanExpression_" data-uid="NewPaintApp.AppBool.EvaluateBooleanExpression*"></a>
+
+  <h3 id="NewPaintApp_AppBool_EvaluateBooleanExpression_System_String_" data-uid="NewPaintApp.AppBool.EvaluateBooleanExpression(System.String)">
+  EvaluateBooleanExpression(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluates a boolean expression and returns its boolean value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameterList)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool EvaluateBooleanExpression(string line)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>parameterList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">CanvasException</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
 
 
-  <a id="NewPaintApp_AppCircle_Execute_" data-uid="NewPaintApp.AppCircle.Execute*"></a>
 
-  <h3 id="NewPaintApp_AppCircle_Execute" data-uid="NewPaintApp.AppCircle.Execute">
+
+
+
+
+
+
+
+  <a id="NewPaintApp_AppBool_Execute_" data-uid="NewPaintApp.AppBool.Execute*"></a>
+
+  <h3 id="NewPaintApp_AppBool_Execute" data-uid="NewPaintApp.AppBool.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the circle command by drawing a circle on the canvas with the specified radius.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -386,7 +385,7 @@ Class AppCircle  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppCircle.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppBool.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

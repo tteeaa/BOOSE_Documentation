@@ -89,7 +89,7 @@
 
 
   <h1 id="NewPaintApp_AppTriangle" data-uid="NewPaintApp.AppTriangle" class="text-break">
-Class AppTriangle  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class AppTriangle  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppTriangle : Shape</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppTriangle : CommandTwoParameters, ICommand</code></pre>
   </div>
 
 
@@ -112,27 +112,90 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="NewPaintApp.Shape.html">Shape</a></div>
+      <div><span class="xref">Command</span></div>
+      <div><span class="xref">CanvasCommand</span></div>
+      <div><span class="xref">CommandOneParameter</span></div>
+      <div><span class="xref">CommandTwoParameters</span></div>
       <div><span class="xref">AppTriangle</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">ICommand</span></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="NewPaintApp.Shape.html#NewPaintApp_Shape_colour">Shape.colour</a>
+      <span class="xref">CommandTwoParameters.param2</span>
     </div>
     <div>
-      <a class="xref" href="NewPaintApp.Shape.html#NewPaintApp_Shape_x">Shape.x</a>
+      <span class="xref">CommandTwoParameters.param2unprocessed</span>
     </div>
     <div>
-      <a class="xref" href="NewPaintApp.Shape.html#NewPaintApp_Shape_y">Shape.y</a>
+      <span class="xref">CommandOneParameter.param1</span>
     </div>
     <div>
-      <a class="xref" href="NewPaintApp.Shape.html#NewPaintApp_Shape_ToString">Shape.ToString()</a>
+      <span class="xref">CommandOneParameter.param1unprocessed</span>
+    </div>
+    <div>
+      <span class="xref">CanvasCommand.yPos</span>
+    </div>
+    <div>
+      <span class="xref">CanvasCommand.xPos</span>
+    </div>
+    <div>
+      <span class="xref">CanvasCommand.canvas</span>
+    </div>
+    <div>
+      <span class="xref">CanvasCommand.Canvas</span>
+    </div>
+    <div>
+      <span class="xref">Command.IsDouble</span>
+    </div>
+    <div>
+      <span class="xref">Command.program</span>
+    </div>
+    <div>
+      <span class="xref">Command.parameterList</span>
+    </div>
+    <div>
+      <span class="xref">Command.parameters</span>
+    </div>
+    <div>
+      <span class="xref">Command.paramsint</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a>
+    </div>
+    <div>
+      <span class="xref">Command.Compile()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.ProcessParameters(string)</a>
+    </div>
+    <div>
+      <span class="xref">Command.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Command.Program</span>
+    </div>
+    <div>
+      <span class="xref">Command.Name</span>
+    </div>
+    <div>
+      <span class="xref">Command.ParameterList</span>
+    </div>
+    <div>
+      <span class="xref">Command.Parameters</span>
+    </div>
+    <div>
+      <span class="xref">Command.Paramsint</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -165,9 +228,35 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
 
   <a id="NewPaintApp_AppTriangle__ctor_" data-uid="NewPaintApp.AppTriangle.#ctor*"></a>
 
-  <h3 id="NewPaintApp_AppTriangle__ctor_System_Int32_System_Int32_" data-uid="NewPaintApp.AppTriangle.#ctor(System.Int32,System.Int32)">
-  AppTriangle(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <h3 id="NewPaintApp_AppTriangle__ctor" data-uid="NewPaintApp.AppTriangle.#ctor">
+  AppTriangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppTriangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NewPaintApp_AppTriangle__ctor_" data-uid="NewPaintApp.AppTriangle.#ctor*"></a>
+
+  <h3 id="NewPaintApp_AppTriangle__ctor_BOOSE_Canvas_System_Int32_System_Int32_" data-uid="NewPaintApp.AppTriangle.#ctor(BOOSE.Canvas,System.Int32,System.Int32)">
+  AppTriangle(Canvas, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initialises a new instance of the AppTriangle class with the specified width and height.</p>
@@ -175,11 +264,13 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppTriangle(int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public AppTriangle(Canvas c, int width, int height)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
+    <dt><code>c</code> <span class="xref">Canvas</span></dt>
+    <dd></dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
     <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
@@ -204,7 +295,7 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="NewPaintApp_AppTriangle_height" data-uid="NewPaintApp.AppTriangle.height">
   height
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -234,7 +325,7 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="NewPaintApp_AppTriangle_width" data-uid="NewPaintApp.AppTriangle.width">
   width
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -265,56 +356,24 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="NewPaintApp_AppTriangle_calcArea_" data-uid="NewPaintApp.AppTriangle.calcArea*"></a>
+  <a id="NewPaintApp_AppTriangle_CheckParameters_" data-uid="NewPaintApp.AppTriangle.CheckParameters*"></a>
 
-  <h3 id="NewPaintApp_AppTriangle_calcArea" data-uid="NewPaintApp.AppTriangle.calcArea">
-  calcArea()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <h3 id="NewPaintApp_AppTriangle_CheckParameters_System_String___" data-uid="NewPaintApp.AppTriangle.CheckParameters(System.String[])">
+  CheckParameters(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Calculates the area of the triangle.</p>
+  <div class="markdown level1 summary"><p>Checks the parameters for the triangle command to ensure they are valid. Custom error messages.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override float calcArea()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="NewPaintApp_AppTriangle_draw_" data-uid="NewPaintApp.AppTriangle.draw*"></a>
-
-  <h3 id="NewPaintApp_AppTriangle_draw_System_Drawing_Graphics_" data-uid="NewPaintApp.AppTriangle.draw(System.Drawing.Graphics)">
-  draw(Graphics)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L41"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Draws the triangle onto the provided Graphics context.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void draw(Graphics g)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameterList)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></dt>
+    <dt><code>parameterList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -326,6 +385,43 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="NewPaintApp_AppTriangle_Execute_" data-uid="NewPaintApp.AppTriangle.Execute*"></a>
+
+  <h3 id="NewPaintApp_AppTriangle_Execute" data-uid="NewPaintApp.AppTriangle.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the triangle command by drawing a triangle on the canvas with the specified width and height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -333,7 +429,7 @@ Class AppTriangle  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppTriangle.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

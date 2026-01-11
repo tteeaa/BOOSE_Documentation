@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AppWrite | mysite </title>
+      <title>Class AppParser | mysite </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AppWrite | mysite ">
+      <meta name="title" content="Class AppParser | mysite ">
       
-      <meta name="description" content="Command to write text onto the canvas.">
+      <meta name="description" content="Parser class to parse user input and create commands for the BOOSE application.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/new/main/apiSpec/new?filename=NewPaintApp_AppWrite.md&amp;value=---%0Auid%3A%20NewPaintApp.AppWrite%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/new/main/apiSpec/new?filename=NewPaintApp_AppParser.md&amp;value=---%0Auid%3A%20NewPaintApp.AppParser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="NewPaintApp.AppWrite">
+        <article data-uid="NewPaintApp.AppParser">
 
 
 
-  <h1 id="NewPaintApp_AppWrite" data-uid="NewPaintApp.AppWrite" class="text-break">
-Class AppWrite  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppWrite.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h1 id="NewPaintApp_AppParser" data-uid="NewPaintApp.AppParser" class="text-break">
+Class AppParser  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppParser.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>NewPaintApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Command to write text onto the canvas.</p>
+  <div class="markdown summary"><p>Parser class to parse user input and create commands for the BOOSE application.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppWrite : CommandOneParameter, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppParser : IParser</code></pre>
   </div>
 
 
@@ -112,17 +112,14 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">AppWrite</span></div>
+      <div><span class="xref">AppParser</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><span class="xref">ICommand</span></div>
+      <div><span class="xref">IParser</span></div>
     </dd>
   </dl>
 
@@ -130,69 +127,6 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">CommandOneParameter.CheckParameters(string[])</a>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
-    <div>
-      <span class="xref">Command.IsDouble</span>
-    </div>
-    <div>
-      <span class="xref">Command.program</span>
-    </div>
-    <div>
-      <span class="xref">Command.parameterList</span>
-    </div>
-    <div>
-      <span class="xref">Command.parameters</span>
-    </div>
-    <div>
-      <span class="xref">Command.paramsint</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a>
-    </div>
-    <div>
-      <span class="xref">Command.Compile()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.ProcessParameters(string)</a>
-    </div>
-    <div>
-      <span class="xref">Command.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">Command.Program</span>
-    </div>
-    <div>
-      <span class="xref">Command.Name</span>
-    </div>
-    <div>
-      <span class="xref">Command.ParameterList</span>
-    </div>
-    <div>
-      <span class="xref">Command.Parameters</span>
-    </div>
-    <div>
-      <span class="xref">Command.Paramsint</span>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -211,6 +145,9 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
   </dd></dl>
 
 
@@ -222,20 +159,28 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
 </h2>
 
 
-  <a id="NewPaintApp_AppWrite__ctor_" data-uid="NewPaintApp.AppWrite.#ctor*"></a>
+  <a id="NewPaintApp_AppParser__ctor_" data-uid="NewPaintApp.AppParser.#ctor*"></a>
 
-  <h3 id="NewPaintApp_AppWrite__ctor" data-uid="NewPaintApp.AppWrite.#ctor">
-  AppWrite()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppWrite.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="NewPaintApp_AppParser__ctor_BOOSE_ICommandFactory_BOOSE_StoredProgram_" data-uid="NewPaintApp.AppParser.#ctor(BOOSE.ICommandFactory,BOOSE.StoredProgram)">
+  AppParser(ICommandFactory, StoredProgram)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppParser.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the AppParser class with the specified command factory and stored program.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppWrite()</code></pre>
+    <pre><code class="lang-csharp hljs">public AppParser(ICommandFactory factory, StoredProgram program)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <span class="xref">ICommandFactory</span></dt>
+    <dd></dd>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -252,21 +197,68 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
 </h2>
 
 
-  <a id="NewPaintApp_AppWrite_Execute_" data-uid="NewPaintApp.AppWrite.Execute*"></a>
+  <a id="NewPaintApp_AppParser_ParseCommand_" data-uid="NewPaintApp.AppParser.ParseCommand*"></a>
 
-  <h3 id="NewPaintApp_AppWrite_Execute" data-uid="NewPaintApp.AppWrite.Execute">
-  Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppWrite.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <h3 id="NewPaintApp_AppParser_ParseCommand_System_String_" data-uid="NewPaintApp.AppParser.ParseCommand(System.String)">
+  ParseCommand(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppParser.cs/#L421"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the write command by evaluating the expression and writing the resulting text onto the canvas.</p>
+  <div class="markdown level1 summary"><p>Parse a single command line into an ICommand. Not used in this implementation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
+    <pre><code class="lang-csharp hljs">public ICommand ParseCommand(string Line)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ICommand</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="NewPaintApp_AppParser_ParseProgram_" data-uid="NewPaintApp.AppParser.ParseProgram*"></a>
+
+  <h3 id="NewPaintApp_AppParser_ParseProgram_System_String_" data-uid="NewPaintApp.AppParser.ParseProgram(System.String)">
+  ParseProgram(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppParser.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parse the user input line by line, handling comments and empty lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParseProgram(string source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -283,7 +275,7 @@ Class AppWrite  <a class="header-action link-secondary" title="View source" href
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppWrite.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-tteeaa/blob/main/BOOSEexamplePrograms/6addYourProgramsHere/AppParser.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 
